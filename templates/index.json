@@ -20,7 +20,7 @@
         "mobile_height": 510,
         "mob_overlay_padding_top": 128,
         "mob_overlay_padding_bottom": 24,
-        "mob_heading_font_size": 22,
+        "mob_heading_font_size": 29,
         "mob_subtext_font_size": 14,
         "mob_btn_font_size": 13,
         "mob_btn_padding_top": 12,
@@ -236,6 +236,7 @@
       "name": "Shop by Category",
       "settings": {
         "heading": "Shop by Category",
+        "heading_weight": "700",
         "products_per_row": 4,
         "products_per_row_mobile": 2,
         "mobile_border_width": 1,
