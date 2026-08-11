@@ -30,10 +30,10 @@
         "mob_btn_min_height": 0,
         "mob_btn_group_margin_top": 4,
         "mob_btn_group_margin_bottom": 0,
-        "left_image": "shopify://shop_images/004-PRECISION-ADJUST_1.webp",
         "left_image_url": "https://cdn.shopify.com/s/files/1/0778/6928/5630/files/KE-use-kitchen-1.webp?v=1780980800",
-        "heading": "Bring back the edge",
-        "subtext": "From kitchen knives to pocket blades and workshop tools — the right sharpener for every edge you own.",
+        "mobile_image_url": "",
+        "heading": "CLEARANCE SALE",
+        "subtext": "INDUSTRIAL QUALITY TOOLS & EQUIPMENT, FOR THE PROFESSIONAL Australia's wholesale specialist in trade-grade tools and workshop equipment — 6,000+ products built for professional results.",
         "subtext_max_width": 620,
         "tags": "",
         "tag1_label": "",
@@ -68,6 +68,7 @@
         "cta_skew": -21,
         "cta2_label": "find best sharpener for me",
         "cta2_link": "",
+        "cta2_quiz_id": "",
         "cta2_style": "filled",
         "cta2_arrow": true,
         "cta2_text_color": "#ffffff",
@@ -76,8 +77,8 @@
         "cta2_skew": -21,
         "cta2_glow": true,
         "cta_position": "middle-left",
-        "video": "",
-        "video_url": "",
+        "video": "shopify://files/videos/ITM - Industrial Quality Tools & Equipment - ITM Tools (1080p).mp4",
+        "video_url": "https://www.youtube.com/watch?v=fv1w8vBwR2I&t=16s",
         "slideshow_autoplay": true,
         "slideshow_speed": 5,
         "show_arrows": true,
@@ -106,8 +107,8 @@
         "mob_btn_min_height": 0,
         "mob_btn_group_margin_top": 4,
         "mob_btn_group_margin_bottom": 0,
-        "left_image": "shopify://shop_images/004-PRECISION-ADJUST_1.webp",
         "left_image_url": "https://cdn.shopify.com/s/files/1/0778/6928/5630/files/KE-use-kitchen-1.webp?v=1780980800",
+        "mobile_image_url": "",
         "heading": "GET DAD SOMETHING HE WILL ACTUALLY USE THIS FATHERS DAY",
         "subtext": "From kitchen knives to pocket blades and workshop tools — the right sharpener for every edge you own.",
         "subtext_max_width": 620,
@@ -144,15 +145,15 @@
         "cta_skew": -21,
         "cta2_label": "",
         "cta2_link": "",
+        "cta2_quiz_id": "",
         "cta2_style": "filled",
         "cta2_arrow": true,
         "cta2_text_color": "#ffffff",
-        "cta2_border_color": "#F5A623",
-        "cta2_fill_color": "#F5A623",
+        "cta2_border_color": "#f5a623",
+        "cta2_fill_color": "#f5a623",
         "cta2_skew": -21,
         "cta2_glow": true,
         "cta_position": "middle-left",
-        "video": "",
         "video_url": "",
         "slideshow_autoplay": true,
         "slideshow_speed": 5,
@@ -166,7 +167,7 @@
         "tab_GaRcK7": {
           "type": "tab",
           "settings": {
-            "collection": "benchtop-knife-sharpeners",
+            "collection": "ns-cat-drilling-machines",
             "label": "",
             "subcollections": []
           }
@@ -174,7 +175,7 @@
         "tab_AfrPLJ": {
           "type": "tab",
           "settings": {
-            "collection": "kitchen-knife-sharpeners",
+            "collection": "ns-cat-grinding-machines",
             "label": "",
             "subcollections": [
               "kitchen-knife-sharpeners"
@@ -184,7 +185,7 @@
         "tab_na3iXH": {
           "type": "tab",
           "settings": {
-            "collection": "electric-knife-sharpeners",
+            "collection": "ns-cat-air-tools-and-accessories",
             "label": "",
             "subcollections": []
           }
@@ -192,7 +193,7 @@
         "tab_GiEw63": {
           "type": "tab",
           "settings": {
-            "collection": "portable-pocket-knife-sharpeners",
+            "collection": "ns-cat-sockets-accessories",
             "label": "",
             "subcollections": []
           }
@@ -200,8 +201,8 @@
         "tab_VLwVkY": {
           "type": "tab",
           "settings": {
-            "collection": "accessories-consumables",
-            "label": "ACCESSORIES & PARTS",
+            "collection": "ns-cat-load-restraint",
+            "label": "LOAD RESTRAINT",
             "subcollections": [
               "abrasive-belts-to-suit-wskts",
               "abrasive-belts-to-suit-wskts-ken-onion-edition",
@@ -313,7 +314,6 @@
       "type": "itm-mobile-video-hero",
       "name": "Mobile Video Hero",
       "settings": {
-        "video": "",
         "video_url": "",
         "height": 420,
         "bg": "#000000",
@@ -328,7 +328,6 @@
         "slide_eHLmPW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ws-hero-1.webp",
             "image_overlay_opacity": 0,
             "heading": "",
             "subheading": "",
@@ -344,7 +343,6 @@
         "slide_raVbTM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ws-hero-2.webp",
             "image_overlay_opacity": 0,
             "heading": "",
             "subheading": "",
@@ -360,7 +358,6 @@
         "slide_9CGrPc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ws-hero-3.webp",
             "image_overlay_opacity": 0,
             "heading": "",
             "subheading": "",
@@ -376,7 +373,6 @@
         "slide_tjQYqa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ws-hero-4.webp",
             "image_overlay_opacity": 0,
             "heading": "",
             "subheading": "",
@@ -392,7 +388,6 @@
         "slide_G4Nc4M": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ws-hero-5.webp",
             "image_overlay_opacity": 0,
             "heading": "",
             "subheading": "",
@@ -433,8 +428,6 @@
           "type": "category",
           "settings": {
             "collection": "portable-pocket-knife-sharpeners",
-            "image": "shopify://shop_images/d54aece8f0e2dbe61655eeaa24607666.jpg",
-            "hover_image": "shopify://shop_images/510f8f60c81ffde8a549a7c9b763d2c2.jpg",
             "title": ""
           }
         },
@@ -442,7 +435,6 @@
           "type": "category",
           "settings": {
             "collection": "benchtop-knife-sharpeners",
-            "hover_image": "shopify://shop_images/ec378b9abbd18ba91557b6b0cab83a06.jpg",
             "title": ""
           }
         },
@@ -450,8 +442,6 @@
           "type": "category",
           "settings": {
             "collection": "electric-knife-sharpeners",
-            "image": "shopify://shop_images/9004b8b7f0a9384e9869831f3bf38637.jpg",
-            "hover_image": "shopify://shop_images/eyJidWNrZXQiOiJ3ZWItbmluamEtaW1hZ2VzIiwia2V5Ijoid29ya3NoYXJwdG9vbHMyXC9jb250ZW50LWZpbGVcL1dTS1RTLUtPMi1JXzkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2MDAsImhlaWdodCI6NjAwLCJmaXQiOiJ.webp",
             "title": ""
           }
         },
@@ -459,8 +449,6 @@
           "type": "category",
           "settings": {
             "collection": "accessories-consumables",
-            "image": "shopify://shop_images/4a73572cd79466d155b9200ab73644fc.jpg",
-            "hover_image": "shopify://shop_images/9d3e4e06dc65bdee622bbb6efbc98fc5.jpg",
             "title": ""
           }
         }
@@ -490,7 +478,6 @@
         "item_69Xxkw": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/ws-3yr-icon.webp",
             "title": "3 Year Warranty",
             "text": "Hassle Free, No Hoops To Jump Through, Just Straight To The Point."
           }
@@ -498,7 +485,6 @@
         "item_RapjVn": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/ws-usa-icon.webp",
             "title": "USA Based, Australian Stocked",
             "text": "Designed, Engineered & Calibrated in Ashland, Oregon."
           }
@@ -506,7 +492,6 @@
         "item_n6AdgC": {
           "type": "item",
           "settings": {
-            "icon": "shopify://shop_images/ws-wc-icon.webp",
             "title": "World Class Service",
             "text": "Our Sharpening Experts Are There To Offer Support And Tips When You Need It."
           }
@@ -580,7 +565,6 @@
         "category_RTUrFW": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/RollingKnifeSharpener-Lifestyle-KitchenKnife6-scaled.webp",
             "title": "For the Kitchen",
             "subtitle": "Shop now",
             "link": "https://worksharptools.com.au/collections/kitchen-knife-sharpeners"
@@ -589,7 +573,6 @@
         "category_XahK4k": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Blacktail_Giveaway-10_1.webp",
             "title": "for the hunt & Fish",
             "subtitle": "Shop now",
             "link": "https://worksharptools.com.au/collections/hunting-knife-sharpeners"
@@ -598,7 +581,6 @@
         "category_GkqUYX": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Compressed-KO2_Hero_2_1.jpg",
             "title": "for the shop",
             "subtitle": "Shop now",
             "link": "https://worksharptools.com.au/collections/benchtop-knife-sharpeners"
@@ -607,7 +589,6 @@
         "category_VqaFM4": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Compressed-_DSC0969_1.webp",
             "title": "for the trail",
             "subtitle": "Shop now",
             "link": "https://worksharptools.com.au/collections/portable-pocket-knife-sharpeners"
@@ -620,6 +601,7 @@
         "category_GkqUYX",
         "category_VqaFM4"
       ],
+      "disabled": true,
       "name": "Category Image Grid",
       "settings": {
         "heading": "Find the right tool for you",
@@ -864,6 +846,7 @@
         "review_ed",
         "review_bob"
       ],
+      "disabled": true,
       "name": "Customer Reviews",
       "settings": {
         "heading": "Customer Reviews",
@@ -883,7 +866,6 @@
         "icon_hC3bPa": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/sharpens-kitchen.svg",
             "label": "Kitchen",
             "link": "https://worksharptools.com.au/collections/all?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.itm.sharpens=Kitchen"
           }
@@ -891,7 +873,6 @@
         "icon_CFbq9x": {
           "type": "icon",
           "settings": {
-            "icon": "shopify://shop_images/sharpens-hunt.svg",
             "label": "Hunt",
             "link": "https://worksharptools.com.au/collections/all?sort_by=best-selling&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.itm.sharpens=Hunt"
           }
@@ -941,6 +922,7 @@
         "icon_QN3Wmi",
         "icon_93gXh4"
       ],
+      "disabled": true,
       "name": "Category Icon Strip",
       "settings": {
         "heading": "Shop By Capability",
@@ -979,6 +961,7 @@
     },
     "featured_blog_yf4hXf": {
       "type": "itm-home-blog",
+      "disabled": true,
       "name": "Home Blog Grid",
       "settings": {
         "blog": "education-hub",
@@ -1070,7 +1053,6 @@
         "color_scheme": "scheme-4",
         "kicker": "NEW RELEASE !",
         "name_override": "PRECISION ADJUST PRO",
-        "custom_image": "shopify://shop_images/paj-pro-hero.png",
         "hero_height": 20,
         "feather_center": -80,
         "feather_radius": 80,
