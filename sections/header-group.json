@@ -45,7 +45,6 @@
           "type": "trust_item",
           "settings": {
             "icon_preset": "shield",
-            "icon": "shopify://shop_images/shield-svgrepo-com.svg",
             "icon_url": "",
             "text": "3 Year Warranty",
             "link": ""
@@ -56,7 +55,6 @@
           "disabled": true,
           "settings": {
             "icon_preset": "star",
-            "icon": "shopify://shop_images/star-sharp-svgrepo-com.svg",
             "icon_url": "",
             "text": "1500+ Reviews",
             "link": ""
@@ -66,7 +64,6 @@
           "type": "trust_item",
           "settings": {
             "icon_preset": "refund",
-            "icon": "shopify://shop_images/redo-svgrepo-com.svg",
             "icon_url": "",
             "text": "30 Day Money-Back Guarantee",
             "link": ""
@@ -76,7 +73,6 @@
           "type": "trust_item",
           "settings": {
             "icon_preset": "truck",
-            "icon": "shopify://shop_images/truck-speed-svgrepo-com.svg",
             "icon_url": "",
             "text": "Free Delivery over $99",
             "link": ""
@@ -163,7 +159,7 @@
         "show_line_separator": true,
         "header_max_width": 3840,
         "header_padding_side_mobile": 10,
-        "logo_max_width_mobile": 100,
+        "logo_max_width_mobile": 140,
         "icon_size_mobile": 20,
         "search_placeholder": "I am looking for...",
         "search_placeholder_color": "#737373",
@@ -201,7 +197,7 @@
         "lists_label": "Lists",
         "lists_badge_bg": "#ffffff",
         "lists_badge_text": "#111111",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-3",
         "menu_color_scheme": "scheme-3",
         "icon_primary_color": "#ffffff",
         "icon_secondary_color": "#ffffff",
@@ -235,7 +231,6 @@
             "spacing": 8,
             "font_size": 14,
             "font_weight": "600",
-            "localized_icon": "shopify://shop_images/worksharp_favicon.png",
             "flag_height_style": "full"
           },
           "blocks": {}
