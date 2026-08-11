@@ -104,7 +104,9 @@
               {%- endif -%}
             </div>
           </div>
-          {%- render 'itm-wishlist-btn', product: card_product -%}
+          {%- if settings.enable_wishlist -%}
+            {%- render 'itm-wishlist-btn', product: card_product -%}
+          {%- endif -%}
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">

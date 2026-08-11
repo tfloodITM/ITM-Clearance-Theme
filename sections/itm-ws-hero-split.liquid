@@ -464,7 +464,7 @@
           <h1>{{ section.settings.heading }}</h1>
         {%- endif -%}
         {%- if section.settings.subtext != blank -%}
-          <p class="itm-hs-overlay__sub">{{ section.settings.subtext }}</p>
+          <div class="itm-hs-overlay__sub">{{ section.settings.subtext }}</div>
         {%- endif -%}
         {%- capture _tag_labels -%}{{ section.settings.tag1_label }}~|~{{ section.settings.tag2_label }}~|~{{ section.settings.tag3_label }}~|~{{ section.settings.tag4_label }}~|~{{ section.settings.tag5_label }}{%- endcapture -%}
         {%- capture _tag_links -%}{{ section.settings.tag1_link }}~|~{{ section.settings.tag2_link }}~|~{{ section.settings.tag3_link }}~|~{{ section.settings.tag4_link }}~|~{{ section.settings.tag5_link }}{%- endcapture -%}
@@ -596,7 +596,7 @@
             <h2>{{ block.settings.heading }}</h2>
           {%- endif -%}
           {%- if block.settings.subtext != blank -%}
-            <p class="itm-hs-overlay__sub">{{ block.settings.subtext }}</p>
+            <div class="itm-hs-overlay__sub">{{ block.settings.subtext }}</div>
           {%- endif -%}
           {%- if block.settings.tags != blank -%}
             <p class="itm-hs-overlay__tags">{{ block.settings.tags }}</p>
@@ -899,10 +899,10 @@
       "default": "Knife Sharpener"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "subtext",
       "label": "Subtext",
-      "default": "Shop top knife sharpener models for every type of knife."
+      "default": "<p>Shop top knife sharpener models for every type of knife.</p>"
     },
     {
       "type": "range",
@@ -1337,7 +1337,7 @@
           "label": "Heading"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "subtext",
           "label": "Subtext"
         },

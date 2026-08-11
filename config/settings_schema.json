@@ -1547,6 +1547,13 @@
         "label": "Allow external stockist links",
         "info": "Show 'Find a stockist' links on product and category pages",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_wishlist",
+        "label": "Enable wishlist / add to list",
+        "info": "Shows the 'Save to list' buttons on product cards and the Lists icon in the header. Turn off to hide the feature site-wide without removing it from the theme.",
+        "default": false
       }
     ]
   }

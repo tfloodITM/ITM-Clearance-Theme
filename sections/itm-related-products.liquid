@@ -168,20 +168,22 @@
                   {%- else -%}
                     <button class="sbc__atc" disabled>Sold Out</button>
                   {%- endif -%}
-                  <span class="sbc__atc-divider" aria-hidden="true"></span>
-                  <button class="sbc__list-btn" type="button"
-                    data-wl-handle="{{ recommendation.handle }}"
-                    data-wl-sku="{{ recommendation.selected_or_first_available_variant.sku | escape }}"
-                    data-wl-title="{{ recommendation.title | escape }}"
-                    data-wl-price="{{ recommendation.price_min | money | escape }}"
-                    data-wl-vid="{{ recommendation.selected_or_first_available_variant.id }}"
-                    aria-label="Save to list" title="Save to list">
-                    <span class="sbc__icon-wrap">
-                      <svg class="itm-wl-icon--list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5h6a1 1 0 0 1 1 1v.5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-.5a1 1 0 0 1 1-1z"/><path d="M8 5.5H6a2 2 0 0 0-2 2V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-2"/><path d="M9 11.5h6"/><path d="M9 15.5h6"/></svg>
-                      <svg class="itm-wl-icon--saved" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                      <span class="sbc__list-plus" aria-hidden="true"></span>
-                    </span>
-                  </button>
+                  {%- if settings.enable_wishlist -%}
+                    <span class="sbc__atc-divider" aria-hidden="true"></span>
+                    <button class="sbc__list-btn" type="button"
+                      data-wl-handle="{{ recommendation.handle }}"
+                      data-wl-sku="{{ recommendation.selected_or_first_available_variant.sku | escape }}"
+                      data-wl-title="{{ recommendation.title | escape }}"
+                      data-wl-price="{{ recommendation.price_min | money | escape }}"
+                      data-wl-vid="{{ recommendation.selected_or_first_available_variant.id }}"
+                      aria-label="Save to list" title="Save to list">
+                      <span class="sbc__icon-wrap">
+                        <svg class="itm-wl-icon--list" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5h6a1 1 0 0 1 1 1v.5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-.5a1 1 0 0 1 1-1z"/><path d="M8 5.5H6a2 2 0 0 0-2 2V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-2"/><path d="M9 11.5h6"/><path d="M9 15.5h6"/></svg>
+                        <svg class="itm-wl-icon--saved" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span class="sbc__list-plus" aria-hidden="true"></span>
+                      </span>
+                    </button>
+                  {%- endif -%}
                 </div>
               {%- endif -%}
 

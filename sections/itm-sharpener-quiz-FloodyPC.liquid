@@ -760,24 +760,27 @@
       var atcDisabled = p.available ? '' : ' disabled';
       var atcHtml = '<button class="sq-atc" data-sq-vid="' + p.vid + '"' + atcDisabled + '>' + atcLabel + '</button>';
 
-      // Wishlist button
+      // Wishlist button — {{ settings.enable_wishlist | json }} comes from the theme-wide "Enable wishlist" setting
       var wlHandle = p.handle || handle;
-      var wlHtml = '<button class="sq-wl-btn" type="button"'
-        + ' data-wl-handle="' + escHtml(wlHandle) + '"'
-        + ' data-wl-sku="' + escHtml(p.sku || '') + '"'
-        + ' data-wl-title="' + escHtml(p.title) + '"'
-        + ' data-wl-price="' + escHtml(p.price || '') + '"'
-        + ' data-wl-vid="' + escHtml(String(p.vid || '')) + '"'
-        + ' aria-label="Save to list">'
-        + '<svg class="itm-wl-icon--list" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-        + '<path d="M9 4.5h6a1 1 0 0 1 1 1v.5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-.5a1 1 0 0 1 1-1z"/>'
-        + '<path d="M8 5.5H6a2 2 0 0 0-2 2V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-2"/>'
-        + '<path d="M9 11.5h6"/><path d="M9 15.5h6"/>'
-        + '</svg>'
-        + '<svg class="itm-wl-icon--saved" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-        + '<polyline points="20 6 9 17 4 12"/>'
-        + '</svg>'
-        + '</button>';
+      var wlHtml = '';
+      if ({{ settings.enable_wishlist | json }}) {
+        wlHtml = '<button class="sq-wl-btn" type="button"'
+          + ' data-wl-handle="' + escHtml(wlHandle) + '"'
+          + ' data-wl-sku="' + escHtml(p.sku || '') + '"'
+          + ' data-wl-title="' + escHtml(p.title) + '"'
+          + ' data-wl-price="' + escHtml(p.price || '') + '"'
+          + ' data-wl-vid="' + escHtml(String(p.vid || '')) + '"'
+          + ' aria-label="Save to list">'
+          + '<svg class="itm-wl-icon--list" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+          + '<path d="M9 4.5h6a1 1 0 0 1 1 1v.5a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-.5a1 1 0 0 1 1-1z"/>'
+          + '<path d="M8 5.5H6a2 2 0 0 0-2 2V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5a2 2 0 0 0-2-2h-2"/>'
+          + '<path d="M9 11.5h6"/><path d="M9 15.5h6"/>'
+          + '</svg>'
+          + '<svg class="itm-wl-icon--saved" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+          + '<polyline points="20 6 9 17 4 12"/>'
+          + '</svg>'
+          + '</button>';
+      }
 
       card.innerHTML = imgHtml
         + '<div class="sq-card-info">'

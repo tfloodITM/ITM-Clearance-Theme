@@ -1471,7 +1471,7 @@
         </a>
       {%- endif -%}
 
-      {%- if section.settings.show_lists -%}
+      {%- if section.settings.show_lists and settings.enable_wishlist -%}
         <a
           href="{{ section.settings.lists_link | default: routes.account_url }}"
           class="header__icon header__icon--lists link focus-inset"
