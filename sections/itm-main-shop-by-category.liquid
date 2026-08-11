@@ -387,6 +387,7 @@
 .sbc__heading {
   margin: 0 0 16px;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: {{ section.settings.heading_weight | default: 700 }};
   text-align: center;
 }
 
@@ -1005,6 +1006,18 @@
       "id": "heading",
       "label": "Heading",
       "default": "Shop by Category"
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "600", "label": "Semibold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra bold" }
+      ],
+      "default": "700"
     },
     {
       "type": "range",
