@@ -233,21 +233,16 @@
   }
 }
 
-/* Mobile: 3.5 items visible, swipe for the rest */
+/* Mobile: wrap so every category shows at once, no horizontal scroll */
 @media (max-width: 767px) {
   .ici__track {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    padding-bottom: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
   }
 
-  .ici__track::-webkit-scrollbar { display: none; }
-
   .ici__item {
-    flex: 0 0 calc(100% / 3.5);
-    scroll-snap-align: start;
+    flex: 0 0 calc(100% / 3 - 8px);
   }
 }
 </style>
