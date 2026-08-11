@@ -163,7 +163,7 @@
         "show_line_separator": true,
         "header_max_width": 3840,
         "header_padding_side_mobile": 10,
-        "logo_max_width_mobile": 140,
+        "logo_max_width_mobile": 100,
         "icon_size_mobile": 20,
         "search_placeholder": "I am looking for...",
         "search_placeholder_color": "#737373",
