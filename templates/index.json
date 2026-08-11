@@ -62,8 +62,8 @@
         "cta_link": "/collections/all",
         "cta_style": "filled",
         "cta_arrow": true,
-        "cta_text_color": "#FFFFFF",
-        "cta_border_color": "#FFFFFF",
+        "cta_text_color": "#ffffff",
+        "cta_border_color": "#ffffff",
         "cta_fill_color": "#003660",
         "cta_skew": 0,
         "cta2_label": "",
@@ -314,6 +314,7 @@
       "type": "itm-mobile-video-hero",
       "name": "Mobile Video Hero",
       "settings": {
+        "video": "shopify://files/videos/ITM - Industrial Quality Tools & Equipment - ITM Tools (1080p).mp4",
         "video_url": "",
         "height": 420,
         "bg": "#000000",
