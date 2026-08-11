@@ -46,16 +46,16 @@
           "settings": {
             "icon_preset": "shield",
             "icon_url": "",
-            "text": "3 Year Warranty",
+            "text": "Australian Owned & Operated",
             "link": ""
           }
         },
         "trust_item_EJfqP8": {
           "type": "trust_item",
           "settings": {
-            "icon_preset": "star",
+            "icon_preset": "box",
             "icon_url": "",
-            "text": "1500+ Reviews",
+            "text": "Over 20K Products",
             "link": ""
           }
         },
@@ -64,16 +64,16 @@
           "settings": {
             "icon_preset": "refund",
             "icon_url": "",
-            "text": "30 Day Money-Back Guarantee",
+            "text": "Est 1992",
             "link": ""
           }
         },
         "trust_item_nRyC3H": {
           "type": "trust_item",
           "settings": {
-            "icon_preset": "truck",
+            "icon_preset": "clock",
             "icon_url": "",
-            "text": "Free Delivery over $99",
+            "text": "Nationwide Service & Parts",
             "link": ""
           }
         },
@@ -185,7 +185,7 @@
         "trust_bar_padding_y": 6,
         "trust_item_font_size": 11,
         "trust_icon_size": 18,
-        "trust_icon_color": "#0088F3",
+        "trust_icon_color": "#0088f3",
         "trust_icon_offset_y": -1,
         "trust_divider_inset": 8,
         "trust_items_mobile": 2,
