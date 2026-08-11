@@ -185,7 +185,7 @@
         "trust_bar_padding_y": 6,
         "trust_item_font_size": 11,
         "trust_icon_size": 18,
-        "trust_icon_color": "#0088F3",
+        "trust_icon_color": "#f8b100",
         "trust_icon_offset_y": -1,
         "trust_divider_inset": 8,
         "trust_items_mobile": 2,
