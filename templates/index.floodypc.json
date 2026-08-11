@@ -23,8 +23,6 @@
         "mob_heading_font_size": 28,
         "mob_subtext_font_size": 14,
         "mob_btn_font_size": 13,
-        "mob_btn_padding_v": 12,
-        "mob_btn_padding_h": 24,
         "mob_btn_min_height": 0,
         "left_image_url": "https://cdn.shopify.com/s/files/1/0778/6928/5630/files/KE-use-kitchen-1.webp?v=1780980800",
         "heading": "Bring back the edge",
@@ -45,8 +43,6 @@
         "btn_font_weight": "700",
         "btn_text_transform": "uppercase",
         "btn_letter_spacing": 4,
-        "btn_padding_v": 12,
-        "btn_padding_h": 18,
         "btn_min_height": 46,
         "btn_border_radius": 50,
         "cta_label": "SHOP SHARPENERS",
@@ -65,7 +61,6 @@
         "cta2_fill_color": "",
         "cta2_glow": true,
         "cta_position": "middle-left",
-        "video": "",
         "video_url": "",
         "slideshow_autoplay": true,
         "slideshow_speed": 5,
@@ -188,7 +183,6 @@
       "type": "itm-mobile-video-hero",
       "name": "Mobile Video Hero",
       "settings": {
-        "video": "",
         "video_url": "",
         "height": 420,
         "bg": "#000000",
@@ -534,8 +528,7 @@
             "avatar_color": "#e07b39",
             "time": "1 year ago",
             "title": "My mind is blown!",
-            "text": "So I have the original guided sharpener they first came out with and it works perfect for sharpening. I've decided to upgrade and the first stone got my knife to an amazing working edge. Absolutely worth it if you're a knife user/hunter/fisherman. JUST BUY IT ONCE AND CRY ONCE.",
-            "helpful_count": 14
+            "text": "So I have the original guided sharpener they first came out with and it works perfect for sharpening. I've decided to upgrade and the first stone got my knife to an amazing working edge. Absolutely worth it if you're a knife user/hunter/fisherman. JUST BUY IT ONCE AND CRY ONCE."
           }
         },
         "review_2": {
@@ -546,8 +539,7 @@
             "avatar_color": "#5b8dd9",
             "time": "1 year ago",
             "title": "Razor sharp with no effort!",
-            "text": "Super impressed with how fast I was able to get my collection of fillet knives razor sharp. Super happy with the excellent performance with little effort!",
-            "helpful_count": 7
+            "text": "Super impressed with how fast I was able to get my collection of fillet knives razor sharp. Super happy with the excellent performance with little effort!"
           }
         },
         "review_3": {
@@ -558,8 +550,7 @@
             "avatar_color": "#7b9e6b",
             "time": "1 year ago",
             "title": "Great addition",
-            "text": "Great addition to keep in your kit. Compact and easy to use. Works great if you just need to do a touch up. Just like all Work Sharp products it's built to last.",
-            "helpful_count": 8
+            "text": "Great addition to keep in your kit. Compact and easy to use. Works great if you just need to do a touch up. Just like all Work Sharp products it's built to last."
           }
         },
         "review_4": {
@@ -570,8 +561,7 @@
             "avatar_color": "#9b6b9b",
             "time": "1 year ago",
             "title": "I love this sharpener!",
-            "text": "It's 5 star. I see some reviews on how it needs a leather strop. I put one on myself. It will be in my pocket everywhere I go. Hoping replaceable ceramic hone and diamond plate replacements are in Worksharps future for it.",
-            "helpful_count": 14
+            "text": "It's 5 star. I see some reviews on how it needs a leather strop. I put one on myself. It will be in my pocket everywhere I go. Hoping replaceable ceramic hone and diamond plate replacements are in Worksharps future for it."
           }
         },
         "review_5": {
@@ -582,8 +572,7 @@
             "avatar_color": "#c9a84c",
             "time": "1 year ago",
             "title": "FOLDING FIELD SHARPENER",
-            "text": "This thing is great..compact...light...but offers a big package in small platform! Works great for bringing back your edge after hard use in the field or just to hone up your edge on every day uses..recommend highly!!",
-            "helpful_count": 10
+            "text": "This thing is great..compact...light...but offers a big package in small platform! Works great for bringing back your edge after hard use in the field or just to hone up your edge on every day uses..recommend highly!!"
           }
         },
         "review_6": {
@@ -594,8 +583,7 @@
             "avatar_color": "#5b9e9e",
             "time": "2 years ago",
             "title": "Best sharpener I've owned",
-            "text": "I've tried many sharpeners over the years and this is by far the best. Easy to use, consistent results every time. My knives have never been sharper. Highly recommend to anyone serious about maintaining their blades.",
-            "helpful_count": 21
+            "text": "I've tried many sharpeners over the years and this is by far the best. Easy to use, consistent results every time. My knives have never been sharper. Highly recommend to anyone serious about maintaining their blades."
           }
         }
       },
