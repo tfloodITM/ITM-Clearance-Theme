@@ -53,6 +53,7 @@
         },
         "trust_item_EJfqP8": {
           "type": "trust_item",
+          "disabled": true,
           "settings": {
             "icon_preset": "star",
             "icon": "shopify://shop_images/star-sharp-svgrepo-com.svg",
@@ -84,40 +85,40 @@
         "mega_item_WAxyCL": {
           "type": "mega_item",
           "settings": {
-            "title": "Benchtop Sharpeners",
-            "link": "shopify://collections/benchtop-knife-sharpeners",
+            "title": "Drilling Machines",
+            "link": "shopify://collections/ns-cat-drilling-machines",
             "layout": "link"
           }
         },
         "mega_item_YWPAFd": {
           "type": "mega_item",
           "settings": {
-            "title": "Kitchen Sharpeners",
-            "link": "shopify://collections/kitchen-knife-sharpeners",
+            "title": "Grinding Machines",
+            "link": "shopify://collections/ns-cat-grinding-machines",
             "layout": "link"
           }
         },
         "mega_item_QHdhx6": {
           "type": "mega_item",
           "settings": {
-            "title": "Electric Knife Sharpeners",
-            "link": "shopify://collections/electric-knife-sharpeners",
+            "title": "Air Tools & Accessories",
+            "link": "shopify://collections/ns-cat-air-tools-and-accessories",
             "layout": "link"
           }
         },
         "mega_item_GjmxqC": {
           "type": "mega_item",
           "settings": {
-            "title": "Portable & Pocket Knife Sharpeners",
-            "link": "shopify://collections/portable-pocket-knife-sharpeners",
+            "title": "Sockets & Accessories",
+            "link": "shopify://collections/ns-cat-sockets-accessories",
             "layout": "link"
           }
         },
         "mega_item_x9k46q": {
           "type": "mega_item",
           "settings": {
-            "title": "Accessories & Parts",
-            "link": "shopify://collections/accessories-consumables",
+            "title": "Load Restraint",
+            "link": "shopify://collections/ns-cat-load-restraint",
             "layout": "link"
           }
         },
@@ -216,8 +217,8 @@
         "padding_bottom_mobile": 0,
         "header_top_row_gap": 0,
         "search_panel_term_size": 14,
-        "popular_searches": "knife sharpener,pocket knife sharpener,bench stone,whetstone,honing rod,electric sharpener",
-        "popular_now_collection": "benchtop-knife-sharpeners"
+        "popular_searches": "bench grinder,impact wrench,transport chain,load binder,angle grinder,socket set",
+        "popular_now_collection": "ns-cat-drilling-machines"
       }
     },
     "176296421790fd5ec6": {
