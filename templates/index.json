@@ -514,6 +514,7 @@
         "item_RapjVn",
         "item_n6AdgC"
       ],
+      "disabled": true,
       "name": "ITM Features (Icons)",
       "settings": {
         "section_use_scheme": false,
