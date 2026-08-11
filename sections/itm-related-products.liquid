@@ -142,13 +142,31 @@
               <div class="sbc__img-wrap">
                 <a class="sbc__card-img-link" href="{{ recommendation.url }}">
                   <div class="sbc__card-img">
-                    {%- for image in recommendation.images limit: 5 -%}
-                      <div class="sbc__slide{% if forloop.first %} is-active{% endif %}">
-                        {{ image | image_url: width: 600 | image_tag: alt: recommendation.title, loading: 'lazy', widths: '300, 400, 600' }}
-                      </div>
+                    {%- if recommendation.images.size > 0 -%}
+                      {%- for image in recommendation.images limit: 5 -%}
+                        <div class="sbc__slide{% if forloop.first %} is-active{% endif %}">
+                          {{ image | image_url: width: 600 | image_tag: alt: recommendation.title, loading: 'lazy', widths: '300, 400, 600' }}
+                        </div>
+                      {%- endfor -%}
                     {%- else -%}
-                      <div class="sbc__slide is-active">{{ 'product-1' | placeholder_svg_tag: 'sbc__ph-svg' }}</div>
-                    {%- endfor -%}
+                      {%- comment -%} ITM: No Shopify-hosted image — fall back to the ITM CDN, keyed by SKU {%- endcomment -%}
+                      {%- assign sbc_rec_sku = recommendation.selected_or_first_available_variant.sku | strip -%}
+                      {%- if sbc_rec_sku != blank -%}
+                        <div class="sbc__slide is-active">
+                          <img
+                            src="{% render 'itm-cdn-product-image', sku: sbc_rec_sku, image_number: 1 %}"
+                            data-cdn-fallback-src="{{ 'image_coming_soon.png' | asset_url }}"
+                            alt="{{ recommendation.title | escape }}"
+                            loading="lazy"
+                            width="600"
+                            height="600"
+                            style="width: 100%; height: auto; object-fit: contain;"
+                          >
+                        </div>
+                      {%- else -%}
+                        <div class="sbc__slide is-active">{{ 'product-1' | placeholder_svg_tag: 'sbc__ph-svg' }}</div>
+                      {%- endif -%}
+                    {%- endif -%}
                   </div>
                 </a>
                 {%- if recommendation.images.size > 1 -%}
