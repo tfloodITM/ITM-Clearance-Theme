@@ -165,6 +165,14 @@
     "itm_main_shop_by_category_yy7X6n": {
       "type": "itm-main-shop-by-category",
       "blocks": {
+        "tab_Kzz4g9": {
+          "type": "tab",
+          "settings": {
+            "collection": "all-products",
+            "label": "",
+            "subcollections": []
+          }
+        },
         "tab_GaRcK7": {
           "type": "tab",
           "settings": {
@@ -226,6 +234,7 @@
         }
       },
       "block_order": [
+        "tab_Kzz4g9",
         "tab_GaRcK7",
         "tab_AfrPLJ",
         "tab_na3iXH",
