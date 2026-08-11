@@ -404,22 +404,13 @@
 }
 
 @media (max-width: 749px) {
-  /* Break out of page-width padding so pills scroll edge-to-edge */
-  .sbc__pills-row {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
+  /* Wrap so every category pill is visible at once, no horizontal scroll */
   .sbc__pills {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 4px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    row-gap: 10px;
   }
-  .sbc__pills::-webkit-scrollbar { display: none; }
 }
 
 .sbc__pill {
