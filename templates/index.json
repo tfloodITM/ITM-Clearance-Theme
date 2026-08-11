@@ -312,6 +312,92 @@
         "padding_bottom": 60
       }
     },
+    "itm_home_product_filter_grid_1": {
+      "type": "itm-home-product-filter-grid",
+      "name": "Product Filter Grid",
+      "blocks": {
+        "cat_drilling": {
+          "type": "category",
+          "settings": {
+            "collection": "ns-cat-drilling-machines",
+            "title": "Drilling Machines"
+          }
+        },
+        "cat_grinding": {
+          "type": "category",
+          "settings": {
+            "collection": "ns-cat-grinding-machines",
+            "title": "Grinding Machines"
+          }
+        },
+        "cat_airtools": {
+          "type": "category",
+          "settings": {
+            "collection": "ns-cat-air-tools-and-accessories",
+            "title": "Air Tools & Accessories"
+          }
+        },
+        "cat_sockets": {
+          "type": "category",
+          "settings": {
+            "collection": "ns-cat-sockets-accessories",
+            "title": "Sockets & Accessories"
+          }
+        },
+        "cat_loadrestraint": {
+          "type": "category",
+          "settings": {
+            "collection": "ns-cat-load-restraint",
+            "title": "Load Restraint"
+          }
+        }
+      },
+      "block_order": [
+        "cat_drilling",
+        "cat_grinding",
+        "cat_airtools",
+        "cat_sockets",
+        "cat_loadrestraint"
+      ],
+      "settings": {
+        "heading": "Shop All Products",
+        "sidebar_heading": "Categories",
+        "all_label": "All Products",
+        "sidebar_width": 220,
+        "products_limit": 16,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "card_img_bg": "#f2f2f2",
+        "arrow_color": "#000000",
+        "card_band_bg": "#003660",
+        "card_band_text": "#ffffff",
+        "text_align": "left",
+        "show_reviews": true,
+        "star_size": 20,
+        "star_color": "#f8b100",
+        "star_empty_color": "#f8b100",
+        "title_size": 16,
+        "title_size_mobile": 11,
+        "title_weight": "700",
+        "show_price": true,
+        "price_size": 16,
+        "price_size_mobile": 10,
+        "price_weight": "400",
+        "price_color": "#ffffff",
+        "show_atc": true,
+        "atc_show_arrow": true,
+        "atc_height": 40,
+        "atc_font_size": 12,
+        "atc_font_weight": "700",
+        "atc_bg": "#003660",
+        "atc_color": "#ffffff",
+        "actions_divider_color": "#ffffff",
+        "list_btn_bg": "#003660",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "itm_mobile_video_hero_edGwdH": {
       "type": "itm-mobile-video-hero",
       "name": "Mobile Video Hero",
@@ -1137,6 +1223,7 @@
     "ws_hero_split",
     "itm_ws_hero_split_cwaKHU",
     "itm_main_shop_by_category_yy7X6n",
+    "itm_home_product_filter_grid_1",
     "itm_mobile_video_hero_edGwdH",
     "slideshow_rJwghf",
     "cats",
