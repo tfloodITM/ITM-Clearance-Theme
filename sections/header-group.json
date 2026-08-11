@@ -43,7 +43,6 @@
       "blocks": {
         "trust_item_BT9Qf6": {
           "type": "trust_item",
-          "disabled": true,
           "settings": {
             "icon_preset": "shield",
             "icon_url": "",
@@ -53,7 +52,6 @@
         },
         "trust_item_EJfqP8": {
           "type": "trust_item",
-          "disabled": true,
           "settings": {
             "icon_preset": "star",
             "icon_url": "",
@@ -63,7 +61,6 @@
         },
         "trust_item_zJD8td": {
           "type": "trust_item",
-          "disabled": true,
           "settings": {
             "icon_preset": "refund",
             "icon_url": "",
@@ -73,7 +70,6 @@
         },
         "trust_item_nRyC3H": {
           "type": "trust_item",
-          "disabled": true,
           "settings": {
             "icon_preset": "truck",
             "icon_url": "",
