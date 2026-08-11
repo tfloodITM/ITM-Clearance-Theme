@@ -294,7 +294,7 @@
         "price_weight": "400",
         "price_color": "#000000",
         "show_atc": true,
-        "atc_show_arrow": false,
+        "atc_show_arrow": true,
         "atc_height": 40,
         "atc_height_mobile": 34,
         "atc_font_size": 12,

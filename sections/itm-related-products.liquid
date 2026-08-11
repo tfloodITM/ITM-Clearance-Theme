@@ -180,9 +180,9 @@
               {%- if section.settings.show_atc -%}
                 <div class="sbc__actions">
                   {%- if recommendation.variants.size == 1 and recommendation.available -%}
-                    <button class="sbc__atc" data-variant-id="{{ recommendation.first_available_variant.id }}">Add to Cart</button>
+                    <button class="sbc__atc" data-variant-id="{{ recommendation.first_available_variant.id }}">Add to Cart<svg class="sbc__atc-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></button>
                   {%- elsif recommendation.available -%}
-                    <a href="{{ recommendation.url }}" class="sbc__atc sbc__atc--options">Choose Options</a>
+                    <a href="{{ recommendation.url }}" class="sbc__atc sbc__atc--options">Choose Options<svg class="sbc__atc-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
                   {%- else -%}
                     <button class="sbc__atc" disabled>Sold Out</button>
                   {%- endif -%}

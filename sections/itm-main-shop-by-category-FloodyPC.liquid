@@ -808,7 +808,10 @@
     }, { passive: true });
   }
 
-  document.querySelectorAll('.sbc__card').forEach(initCarousel);
+  /* Scoped to this section's own cards only — a bare '.sbc__card' selector here
+     would also pick up (and cross-contaminate) identical card markup used by
+     other sections on the same page, e.g. the "Product Filter Grid" section. */
+  document.querySelectorAll('[data-sbc-section] .sbc__card').forEach(initCarousel);
 
   /* ── Add to cart ── */
   document.querySelectorAll('.sbc__atc[data-variant-id]').forEach(function (btn) {
