@@ -52,7 +52,6 @@
         },
         "trust_item_EJfqP8": {
           "type": "trust_item",
-          "disabled": true,
           "settings": {
             "icon_preset": "star",
             "icon_url": "",
