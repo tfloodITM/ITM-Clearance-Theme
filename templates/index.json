@@ -76,7 +76,6 @@
         "cta2_skew": -21,
         "cta2_glow": true,
         "cta_position": "middle-left",
-        "video": "shopify://files/videos/worksharp-home-page-video.mp4",
         "video_url": "",
         "slideshow_autoplay": true,
         "slideshow_speed": 5,
@@ -152,7 +151,6 @@
         "cta2_skew": -21,
         "cta2_glow": true,
         "cta_position": "middle-left",
-        "video": "shopify://files/videos/worksharp-home-page-video.mp4",
         "video_url": "",
         "slideshow_autoplay": true,
         "slideshow_speed": 5,
@@ -313,7 +311,6 @@
       "type": "itm-mobile-video-hero",
       "name": "Mobile Video Hero",
       "settings": {
-        "video": "shopify://files/videos/worksharp-home-page-video.mp4",
         "video_url": "",
         "height": 420,
         "bg": "#000000",
