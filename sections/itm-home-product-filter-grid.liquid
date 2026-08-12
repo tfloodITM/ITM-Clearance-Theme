@@ -24,6 +24,15 @@
   /* Full width on desktop AND mobile — same convention as the collection grid / product pages,
      rather than the theme's standard boxed page-width. */
   #shopify-section-{{ section.id }} .page-width { max-width: 2560px; }
+  @media screen and (max-width: 749px) {
+    /* On mobile, zero out the base .page-width side padding entirely so the grid
+       touches the screen edges (same as the real collection grid on mobile) —
+       the 1.5rem padding is put back on just the text elements below instead. */
+    #shopify-section-{{ section.id }} .page-width { padding: 0; }
+    #shopify-section-{{ section.id }} .hpg__heading,
+    #shopify-section-{{ section.id }} .hpg__sidebar-heading,
+    #shopify-section-{{ section.id }} .hpg__sidebar-list { padding-left: 1.5rem; padding-right: 1.5rem; }
+  }
 
   /* Grid columns, matching the collection grid's --sbc-cols convention */
   #shopify-section-{{ section.id }} .hpg__grid { --sbc-cols: {{ section.settings.columns_desktop }}; grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr); }
@@ -451,10 +460,11 @@
       "type": "range",
       "id": "products_limit",
       "label": "Products per category (max)",
+      "info": "Shopify caps a direct collection listing like this at 50 products per category — that's the platform ceiling, not a theme setting. Categories with more than 50 products would need pagination to show the rest.",
       "min": 4,
-      "max": 48,
-      "step": 4,
-      "default": 16
+      "max": 50,
+      "step": 2,
+      "default": 50
     },
     {
       "type": "range",
