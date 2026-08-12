@@ -115,7 +115,7 @@
 
       <div class="hpg__panels">
         <div class="hpg__panel is-active" data-hpg-panel="all">
-          <ul class="sbc__grid hpg__grid list-unstyled" role="list">
+          <ul class="hpg__grid list-unstyled" role="list">
             {%- for product in hpg_all_collection.products limit: section.settings.products_limit -%}
               <li class="sbc__card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ forloop.index }};"{% endif %}
@@ -137,7 +137,7 @@
         {%- for block in section.blocks -%}
           {%- if block.settings.collection != blank -%}
             <div class="hpg__panel" data-hpg-panel="{{ block.id }}" hidden {{ block.shopify_attributes }}>
-              <ul class="sbc__grid hpg__grid list-unstyled" role="list">
+              <ul class="hpg__grid list-unstyled" role="list">
                 {%- for product in block.settings.collection.products limit: section.settings.products_limit -%}
                   <li class="sbc__card{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}data-cascade style="--animation-order: {{ forloop.index }};"{% endif %}
@@ -210,7 +210,25 @@
 .hpg__panels { flex: 1; min-width: 0; }
 .hpg__panel[hidden] { display: none; }
 
-.hpg__grid { list-style: none; margin: 0; padding: 0; }
+/* Self-contained — deliberately does NOT rely on any other section's CSS
+   (e.g. "Shop by Category"'s .sbc__grid), so this still renders correctly
+   even if every other section on the page is hidden. */
+.hpg__grid {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-top: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.hpg__grid > .sbc__card {
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
 
 .hpg__empty {
   grid-column: 1 / -1;
