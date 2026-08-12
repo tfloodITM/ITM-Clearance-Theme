@@ -43,9 +43,22 @@
   /* Grid columns, matching the collection grid's --sbc-cols convention */
   #shopify-section-{{ section.id }} .hpg__grid { --sbc-cols: {{ section.settings.columns_desktop }}; grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr); }
   @media screen and (max-width: 749px) {
-    #shopify-section-{{ section.id }} .hpg__grid { --sbc-cols: {{ section.settings.columns_mobile }}; grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr); }
+    /* Full-bleed via negative margin (not by zeroing the parent's padding) — same
+       technique the real collection grid uses: width:auto + negative margin breaks
+       the grid out to the screen edges while text/heading above keep their normal
+       inset. Side hairlines are dropped since they'd sit right on the viewport edge. */
+    #shopify-section-{{ section.id }} .hpg__grid {
+      --sbc-cols: {{ section.settings.columns_mobile }};
+      grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
+      width: auto;
+      margin: 0 -1.5rem;
+      border-left: none;
+      border-right: none;
+    }
     {%- if section.settings.columns_mobile == '1' -%}
       #shopify-section-{{ section.id }} .hpg__grid > .sbc__card { border-right-color: transparent; }
+    {%- else -%}
+      #shopify-section-{{ section.id }} .hpg__grid > .sbc__card:nth-child(2n) { border-right-color: transparent; }
     {%- endif -%}
   }
 
