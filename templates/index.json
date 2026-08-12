@@ -221,7 +221,7 @@
         "color_scheme": "scheme-1",
         "card_img_bg": "#f2f2f2",
         "arrow_color": "#000000",
-        "card_band_bg": "#DADBDC",
+        "card_band_bg": "#dadbdc",
         "card_band_text": "#000000",
         "text_align": "left",
         "show_reviews": true,
@@ -329,6 +329,7 @@
         "tab_VLwVkY",
         "tab_ekirmp"
       ],
+      "disabled": true,
       "name": "Shop by Category",
       "settings": {
         "heading": "Shop by Category",
