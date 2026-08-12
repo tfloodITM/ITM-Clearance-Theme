@@ -19,19 +19,25 @@
 
 {%- style -%}
   #shopify-section-{{ section.id }} .hpg { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
-  #shopify-section-{{ section.id }} .hpg__sidebar { flex: 0 0 {{ section.settings.sidebar_width }}px; }
 
-  /* Full width on desktop AND mobile — same convention as the collection grid / product pages,
-     rather than the theme's standard boxed page-width. */
+  /* Sidebar's fixed pixel width is a DESKTOP-ONLY concern — gating it to a
+     min-width query (rather than leaving it unmedia-gated) means it can never
+     out-specificity the mobile "stack + full width" override below. Both
+     rules touched the same property before with the desktop one (wrongly)
+     always-on, so it silently won on mobile too regardless of viewport. */
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .hpg__sidebar { flex: 0 0 {{ section.settings.sidebar_width }}px; }
+  }
+
+  /* Full width on desktop — same convention as the collection grid / product pages,
+     rather than the theme's standard boxed page-width (mobile just inherits this
+     too since there's no separate mobile max-width rule on the reference pages). */
   #shopify-section-{{ section.id }} .page-width { max-width: 2560px; }
+
   @media screen and (max-width: 749px) {
-    /* On mobile, zero out the base .page-width side padding entirely so the grid
-       touches the screen edges (same as the real collection grid on mobile) —
-       the 1.5rem padding is put back on just the text elements below instead. */
-    #shopify-section-{{ section.id }} .page-width { padding: 0; }
-    #shopify-section-{{ section.id }} .hpg__heading,
-    #shopify-section-{{ section.id }} .hpg__sidebar-heading,
-    #shopify-section-{{ section.id }} .hpg__sidebar-list { padding-left: 1.5rem; padding-right: 1.5rem; }
+    #shopify-section-{{ section.id }} .hpg__layout { flex-direction: column; align-items: stretch; }
+    #shopify-section-{{ section.id }} .hpg__sidebar { flex: 0 0 auto; width: 100%; position: static; }
+    #shopify-section-{{ section.id }} .hpg__panels { width: 100%; }
   }
 
   /* Grid columns, matching the collection grid's --sbc-cols convention */
@@ -246,9 +252,11 @@
   padding: 60px 0;
 }
 
+/* flex-direction / sidebar width / panel width for mobile are handled in the
+   scoped {% style %} block above (needs #shopify-section-id scoping to reliably
+   beat the desktop sidebar-width rule — see comment up there). Just the
+   sidebar's own internal pill-list layout lives here since nothing competes with it. */
 @media screen and (max-width: 749px) {
-  .hpg__layout { flex-direction: column; }
-  .hpg__sidebar { flex: 0 0 auto; width: 100%; position: static; }
   .hpg__sidebar-list { flex-direction: row; flex-wrap: wrap; gap: 6px; }
   .hpg__sidebar-link { width: auto; }
 }
